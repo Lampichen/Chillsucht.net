@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #47494a;
+}
+
+footer {
+    overflow: hidden;
+}
+
+.H-start {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background-color: #47494a;
+    padding: 10px 20px;
+    color: white;
+    width: 100vw;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-start {
+    background-color: #47494a;
+    color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    font-size: 20pt;
+    font-family: Poppins;
+}
+
+.button-start:hover {
+    color: #f87100;
+}
+
+@media (min-width: 100px) {
+    .button-start {
+        background-color: #47494a;
+        color: #fafafa;
+        border: none;
+        padding: 0px 0px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        outline: none;
+        font-size: 20pt;
+        font-family: Poppins;
+    }
+}
+@media (min-width: 700px) {
+    .button-start {
+        background-color: #47494a;
+        color: #fafafa;
+        border: none;
+        padding: 5px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        outline: none;
+        font-size: 20pt;
+        font-family: Poppins;
+    }
+}
+@media (min-width: 900px) {
+    .button-start {
+        background-color: #47494a;
+        color: #fafafa;
+        border: none;
+        padding: 8px 8px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        outline: none;
+        font-size: 20pt;
+        font-family: Poppins;
+    }
+}
+@media (min-width: 1200px) {
+    .button-start {
+        background-color: #47494a;
+        color: #fafafa;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        outline: none;
+        font-size: 20pt;
+        font-family: Poppins;
+    }
+}
+
+.blur{
+    filter: blur(4px);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.logo-container {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    z-index: 2;
+}
+
+.cslo-1 {
+    max-width: 256px;
+    max-height: 256px;
+    height: auto;
+    width: var(--cslo-1-width);
+
+}
+
+.cslo-2 {
+    max-height: 121px;
+    height: auto;
+    width: clamp(100px, 100vw, 1005px);
+}
+
+
+.imp-bl {
+    bottom: 0%;
+    display: grid;
+    grid-template-areas:
+    "logo recht wi soc"
+    "logo text-recht text-wi text-soc";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    background-color: #47494a;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Poppins;
+    width: 100vw;
+
+}
+
+.imp-bl > div.logo {
+    grid-area: logo;
+    align-items: center;
+}
+.imp-bl > div.recht {
+    grid-area: recht;
+    color: #f87100;
+}
+.imp-bl > div.wi {
+    grid-area: wi;
+    color: #f87100;
+}
+.imp-bl > div.soc {
+    grid-area: soc;
+    color: #f87100;
+}
+.imp-bl > div.text-recht {
+    grid-area: text-recht;
+    text-align: center;
+}
+.imp-bl > div.text-wi {
+    grid-area: text-wi;
+
+}
+.imp-bl > div.text-soc {
+    grid-area: text-soc;
+    align-items: center;
+    padding-top: 5px;
+}
+
+@media (min-width: 150px) {
+    .imp-bl {
+        grid-template-areas:
+        "logo"
+        "recht"
+        "text-recht"
+        "wi"
+        "text-wi"
+        "soc"
+        "text-soc";
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .imp-bl > div.recht {
+        grid-area: recht;
+        padding-top: 20px;
+    }
+    .imp-bl > div.wi {
+        grid-area: wi;
+        padding-top: 20px;
+    }
+    .imp-bl > div.soc {
+        grid-area: soc;
+        align-items: center;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .imp-bl {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "logo logo"
+        "recht wi"
+        "text-recht text-wi"
+        "soc soc"
+        "text-soc text-soc";
+        text-align: center;
+        justify-content: center;
+    }
+    .imp-bl > div.soc {
+        grid-area: soc;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+}
+
+@media (min-width: 650px) {
+    .imp-bl {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo logo logo"
+        "recht wi soc"
+        "text-recht text-wi text-soc";
+        text-align: center;
+    }
+    .imp-bl > div.soc {
+        grid-area: soc;
+        align-items: center;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .imp-bl {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo recht wi soc"
+        "logo text-recht text-wi text-soc";
+        align-items: center;
+    }
+    .imp-bl > div.recht {
+        grid-area: recht;
+        padding-top: 0px;
+    }
+    .imp-bl > div.wi {
+        grid-area: wi;
+        padding-top: 0px;
+    }
+    .imp-bl > div.soc {
+        grid-area: soc;
+        align-items: center;
+        padding-top: 0px;
+    }
+}
+
+.bi-hov-im {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bi-hov-im:hover,
+.bi-hov-im:active {
+    transform: scale(1.15);
+}
+
+.li-hov {
+
+}
+.li-hov:hover,
+.li-hov:active {
+    color: #f87100;
+}
+
+.te-di-li {
+    font-size: 25;
+    text-decoration: none;
+    outline: none;
+    font-family: Poppins;
+    color: white;
+}
+
+.ueberschrift {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Poppins;
+}
+
+.copyright {
+    font-size: 10px;
+    font-family: Poppins;
+    text-align: bottom;
+    font-family: Poppins;
+}
