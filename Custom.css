@@ -198,6 +198,7 @@ footer {
         "text-soc";
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 40px 0px;
     }
     .imp-bl > div.recht {
         grid-area: recht;
@@ -314,6 +315,13 @@ footer {
     font-family: Poppins;
 }
 
+.lo-up-au {
+    width: 100vw;
+    max-width: 415px;
+    max-height: 50px;
+    height: auto;
+}
+
 @supports not (display: flex) {
     .container {
         display: block; /* Block-Layout als Fallback */
@@ -331,4 +339,3 @@ footer {
         font-family: 'Helvetica', sans-serif; /* Fallback-Schriftart */
     }
 }
-
