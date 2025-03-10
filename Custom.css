@@ -30,7 +30,7 @@ footer {
 
 .button-start {
     background-color: #47494a;
-    color: #fafafa;
+    color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -48,35 +48,35 @@ footer {
 @media (min-width: 100px) {
     .button-start {
         background-color: #47494a;
-        color: #fafafa;
+        color: white;
         border: none;
         padding: 0px 0px;
         cursor: pointer;
         border-radius: 5px;
         text-decoration: none;
         outline: none;
-        font-size: 20pt;
+        font-size: 16pt;
         font-family: Poppins;
     }
 }
 @media (min-width: 700px) {
     .button-start {
         background-color: #47494a;
-        color: #fafafa;
+        color: white;
         border: none;
         padding: 5px 5px;
         cursor: pointer;
         border-radius: 5px;
         text-decoration: none;
         outline: none;
-        font-size: 20pt;
+        font-size: 19pt;
         font-family: Poppins;
     }
 }
 @media (min-width: 900px) {
     .button-start {
         background-color: #47494a;
-        color: #fafafa;
+        color: white;
         border: none;
         padding: 8px 8px;
         cursor: pointer;
@@ -90,7 +90,7 @@ footer {
 @media (min-width: 1200px) {
     .button-start {
         background-color: #47494a;
-        color: #fafafa;
+        color: white;
         border: none;
         padding: 10px 20px;
         cursor: pointer;
@@ -121,6 +121,8 @@ footer {
     width: 100%;
     height: 30%;
     z-index: 2;
+    right: 5px;
+    left: 5px;
 }
 
 .cslo-1 {
@@ -133,8 +135,9 @@ footer {
 
 .cslo-2 {
     max-height: 121px;
+    max-width: 1005px;
     height: auto;
-    width: clamp(100px, 100vw, 1005px);
+    width: clamp(calc(100% - 10px), 100vw, 1005px);
 }
 
 
